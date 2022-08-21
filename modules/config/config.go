@@ -35,6 +35,9 @@ type Account struct {
 	ReLogin          *Reconnect `yaml:"relogin"`
 	UseSSOAddress    bool       `yaml:"use-sso-address"`
 	AllowTempSession bool       `yaml:"allow-temp-session"`
+	PromptTimeout    int        `yaml:"prompt-timeout"`
+	RestartTimeout   int        `yaml:"restart-timeout"`
+	TicketTimeout    int        `yaml:"ticket-timeout"`
 }
 
 // Config 总配置文件
